@@ -18,14 +18,20 @@ export const apiClient = axios.create({
 });
 
 if (isStaticMode) {
+  // GitHub Pages fallback: rewrite URLs to static JSON files
   apiClient.interceptors.request.use((config) => {
     if (typeof config.url !== "string" || config.url.length === 0) {
       return config;
     }
-    const [pathPart, queryPart] = config.url.split("?", 2);
+
+    // Remove leading slash to let Axios combine it properly with baseURL
+    let relativeUrl = config.url.startsWith("/") ? config.url.substring(1) : config.url;
+
+    const [pathPart, queryPart] = relativeUrl.split("?", 2);
     if (!pathPart || /\.[a-z0-9]+$/i.test(pathPart)) {
       return config;
     }
+    
     config.url = queryPart ? `${pathPart}.json?${queryPart}` : `${pathPart}.json`;
     return config;
   });
