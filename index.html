@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover stunning floral arrangements and beautiful fresh bouquets for every occasion at Flora. We bring joy and elegance to your celebrations.">
+  <meta name="description"
+    content="Discover stunning floral arrangements and beautiful fresh bouquets for every occasion at Flora. We bring joy and elegance to your celebrations.">
   <title>Flora - Floral Artistry</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,11 +79,19 @@
           </div>
         </div>
         <div class="about-image">
-          
+
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="./images/about@X1.webp 1x, ./images/about@X2.webp 2x">
+            <source type="image/jpeg" media="(min-width: 1440px)"
+              srcset="./images/about@X1.jpg 1x, ./images/about@X2.jpg 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="./images/about@X1.webp 1x, ./images/about@X2.webp 2x">
+            <source type="image/jpeg" media="(min-width: 768px)"
+              srcset="./images/about@X1.jpg 1x, ./images/about@X2.jpg 2x">
             <source type="image/webp" srcset="./images/about@X1.webp 1x, ./images/about@X2.webp 2x">
-            <img loading="lazy" src="./images/about@X1.jpg" srcset="./images/about@X2.jpg 2x" alt="Florist creating a bouquet"
-            class="about-image-img" width="600" height="428">
+            <img loading="lazy" src="./images/about@X1.jpg" srcset="./images/about@X2.jpg 2x"
+              alt="Florist creating a bouquet" class="about-image-img" width="600" height="428">
           </picture>
         </div>
       </div>
@@ -94,36 +103,36 @@
         <div class="bestsellers-slider-wrapper">
           <ul class="bestsellers-list">
             <li class="bestsellers-item">
-              
-          <picture>
-            <source type="image/webp" srcset="./images/top-bouquet-1@X1.webp 1x, ./images/top-bouquet-1@X2.webp 2x">
-            <img loading="lazy" src="./images/top-bouquet-1@X1.jpg" srcset="./images/top-bouquet-1@X2.jpg 2x" alt="Spring Elegance"
-                class="bestsellers-img" width="400" height="320">
-          </picture>
+
+              <picture>
+                <source type="image/webp" srcset="./images/top-bouquet-1@X1.webp 1x, ./images/top-bouquet-1@X2.webp 2x">
+                <img loading="lazy" src="./images/top-bouquet-1@X1.jpg" srcset="./images/top-bouquet-1@X2.jpg 2x"
+                  alt="Spring Elegance" class="bestsellers-img" width="400" height="320">
+              </picture>
               <h3 class="bestsellers-item-title">Spring Elegance</h3>
               <p class="text bestsellers-item-text">A delicate blend of peonies, tulips, and roses — perfect for
                 springtime gifting and bright smiles.</p>
               <p class="bestsellers-item-price">$35</p>
             </li>
             <li class="bestsellers-item">
-              
-          <picture>
-            <source type="image/webp" srcset="./images/top-bouquet-2@X1.webp 1x, ./images/top-bouquet-2@X2.webp 2x">
-            <img loading="lazy" src="./images/top-bouquet-2@X1.jpg" srcset="./images/top-bouquet-2@X2.jpg 2x" alt="Crimson Rose"
-                class="bestsellers-img" width="400" height="320">
-          </picture>
+
+              <picture>
+                <source type="image/webp" srcset="./images/top-bouquet-2@X1.webp 1x, ./images/top-bouquet-2@X2.webp 2x">
+                <img loading="lazy" src="./images/top-bouquet-2@X1.jpg" srcset="./images/top-bouquet-2@X2.jpg 2x"
+                  alt="Crimson Rose" class="bestsellers-img" width="400" height="320">
+              </picture>
               <h3 class="bestsellers-item-title">Crimson Rose</h3>
               <p class="text bestsellers-item-text">A stylish composition of roses, seasonal greenery, and vibrant
                 berries — a bold and elegant floral statement.</p>
               <p class="bestsellers-item-price">$55</p>
             </li>
             <li class="bestsellers-item">
-              
-          <picture>
-            <source type="image/webp" srcset="./images/top-bouquet-3@X1.webp 1x, ./images/top-bouquet-3@X2.webp 2x">
-            <img loading="lazy" src="./images/top-bouquet-3@X1.jpg" srcset="./images/top-bouquet-3@X2.jpg 2x" alt="Sunny Bliss"
-                class="bestsellers-img" width="400" height="320">
-          </picture>
+
+              <picture>
+                <source type="image/webp" srcset="./images/top-bouquet-3@X1.webp 1x, ./images/top-bouquet-3@X2.webp 2x">
+                <img loading="lazy" src="./images/top-bouquet-3@X1.jpg" srcset="./images/top-bouquet-3@X2.jpg 2x"
+                  alt="Sunny Bliss" class="bestsellers-img" width="400" height="320">
+              </picture>
               <h3 class="bestsellers-item-title">Sunny Bliss</h3>
               <p class="text bestsellers-item-text">A rich bouquet with lavender, lisianthus, and roses — ideal for
                 those who love deep hues and gentle fragrance.</p>
@@ -141,10 +150,14 @@
             </ul>
             <div class="pagination-buttons">
               <button type="button" class="slider-btn prev-btn" aria-label="Previous">
-                <svg width="24" height="24"><use href="./images/icons.svg#left-arrow-alt"></use></svg>
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#left-arrow-alt"></use>
+                </svg>
               </button>
               <button type="button" class="slider-btn next-btn" aria-label="Next">
-                <svg width="24" height="24"><use href="./images/icons.svg#right-arrow-alt"></use></svg>
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#right-arrow-alt"></use>
+                </svg>
               </button>
             </div>
           </div>
@@ -157,104 +170,8 @@
         <h2 class="section-title">Bouquets</h2>
         <p class="title-text">Explore our stunning selection of fresh flower bouquets.</p>
         <ul class="catalogue-list bouquets">
-          <li>
-            
-          <picture>
-            <source type="image/webp" srcset="./images/bouquet-1@X1.webp 1x, ./images/bouquet-1@X2.webp 2x">
-            <img loading="lazy" src="./images/bouquet-1@X1.jpg" srcset="./images/bouquet-1@X2.jpg 2x" alt="Bouquet 1" width="250"
-              class="catalogue-img">
-          </picture>
-            <h3 class="catalogue-item-title">Peach Meadow</h3>
-            <p class="text bestsellers-item-text">A soft and radiant arrangement of peach and blush roses with lush
-              greenery in a straw basket — light and natural.</p>
-            <p class="catalogue-item-price">$55</p>
-          </li>
-          <li>
-            
-          <picture>
-            <source type="image/webp" srcset="./images/bouquet-2@X1.webp 1x, ./images/bouquet-2@X2.webp 2x">
-            <img loading="lazy" src="./images/bouquet-2@X1.jpg" srcset="./images/bouquet-2@X2.jpg 2x" alt="Bouquet 2" width="250"
-              class="catalogue-img">
-          </picture>
-            <h3 class="catalogue-item-title">Blush Romance</h3>
-            <p class="text bestsellers-item-text">A premium bouquet of deep pink and ivory roses, complemented by silver
-              eucalyptus — sophisticated and intimate.</p>
-            <p class="catalogue-item-price">$34</p>
-          </li>
-          <li>
-            
-          <picture>
-            <source type="image/webp" srcset="./images/bouquet-3@X1.webp 1x, ./images/bouquet-3@X2.webp 2x">
-            <img loading="lazy" src="./images/bouquet-3@X1.jpg" srcset="./images/bouquet-3@X2.jpg 2x" alt="Bouquet 3" width="250"
-              class="catalogue-img">
-          </picture>
-            <h3 class="catalogue-item-title">Pastel Garden</h3>
-            <p class="text bestsellers-item-text">A pastel-toned mix of spray roses and greenery in a woven basket —
-              gentle, airy, and perfect for any occasion.</p>
-            <p class="catalogue-item-price">$40</p>
-          </li>
-          <li>
-            
-          <picture>
-            <source type="image/webp" srcset="./images/bouquet-4@X1.webp 1x, ./images/bouquet-4@X2.webp 2x">
-            <img loading="lazy" src="./images/bouquet-4@X1.jpg" srcset="./images/bouquet-4@X2.jpg 2x" alt="Bouquet 4" width="250"
-              class="catalogue-img">
-          </picture>
-            <h3 class="catalogue-item-title">Tulip Charm</h3>
-            <p class="text bestsellers-item-text">A vivid bouquet of bright tulips and roses in a lavender box —
-              cheerful and full of charm.</p>
-            <p class="catalogue-item-price">$61</p>
-          </li>
-          <li>
-            
-          <picture>
-            <source type="image/webp" srcset="./images/bouquet-5@X1.webp 1x, ./images/bouquet-5@X2.webp 2x">
-            <img loading="lazy" src="./images/bouquet-5@X1.jpg" srcset="./images/bouquet-5@X2.jpg 2x" alt="Bouquet 5" width="250"
-              class="catalogue-img">
-          </picture>
-            <h3 class="catalogue-item-title">Berry Bloom</h3>
-            <p class="text bestsellers-item-text">A lush mix of rich pink, purple, and cream blooms with textured greens
-              — romantic and elegant.</p>
-            <p class="catalogue-item-price">$32</p>
-          </li>
-          <li>
-            
-          <picture>
-            <source type="image/webp" srcset="./images/bouquet-6@X1.webp 1x, ./images/bouquet-6@X2.webp 2x">
-            <img loading="lazy" src="./images/bouquet-6@X1.jpg" srcset="./images/bouquet-6@X2.jpg 2x" alt="Bouquet 6" width="250"
-              class="catalogue-img">
-          </picture>
-            <h3 class="catalogue-item-title">Sweet Whisper</h3>
-            <p class="text bestsellers-item-text">A charming spring bouquet with peonies, roses, and lilac-toned accents
-              — fresh, lively, and expressive.</p>
-            <p class="catalogue-item-price">$40</p>
-          </li>
-          <li>
-            
-          <picture>
-            <source type="image/webp" srcset="./images/bouquet-7@X1.webp 1x, ./images/bouquet-7@X2.webp 2x">
-            <img loading="lazy" src="./images/bouquet-7@X1.jpg" srcset="./images/bouquet-7@X2.jpg 2x" alt="Bouquet 7" width="250"
-              class="catalogue-img">
-          </picture>
-            <h3 class="catalogue-item-title">Field Joy</h3>
-            <p class="text bestsellers-item-text">A rustic hand-tied bouquet of sunflowers, lisianthus, and daisies —
-              perfect for brightening the day.</p>
-            <p class="catalogue-item-price">$49</p>
-          </li>
-          <li>
-            
-          <picture>
-            <source type="image/webp" srcset="./images/bouquet-8@X1.webp 1x, ./images/bouquet-8@X2.webp 2x">
-            <img loading="lazy" src="./images/bouquet-8@X1.jpg" srcset="./images/bouquet-8@X2.jpg 2x" alt="Bouquet 8" width="250"
-              class="catalogue-img">
-          </picture>
-            <h3 class="catalogue-item-title">Soft Bloom</h3>
-            <p class="text bestsellers-item-text">A delicate bouquet of pink carnations and roses wrapped in satin paper
-              — soft, stylish, and versatile.</p>
-            <p class="catalogue-item-price">$37</p>
-          </li>
         </ul>
-        <button type="button" class="primary-button">Show More</button>
+        <button type="button" class="primary-button load-more-btn" id="load-more-btn">Show More</button>
       </div>
     </section>
 
@@ -279,10 +196,14 @@
           </ul>
           <div class="feedback-pagination-buttons">
             <button type="button" class="slider-btn prev-btn" aria-label="Previous">
-              <svg width="24" height="24"><use href="./images/icons.svg#left-arrow-alt"></use></svg>
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#left-arrow-alt"></use>
+              </svg>
             </button>
             <button type="button" class="slider-btn next-btn" aria-label="Next">
-              <svg width="24" height="24"><use href="./images/icons.svg#right-arrow-alt"></use></svg>
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#right-arrow-alt"></use>
+              </svg>
             </button>
           </div>
         </div>
@@ -297,26 +218,39 @@
 
         <address class="contacts-list">
           <div class="contact-item">
-            <svg width="24" height="24" class="contact-icon"><use href="./images/icons.svg#phone"></use></svg>
+            <svg width="24" height="24" class="contact-icon">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
             <div class="contact-details">
               <p class="contact-label">Phone</p>
               <a href="tel:+15551234567" class="contact-link">+1 (555) 123-4567</a>
             </div>
           </div>
           <div class="contact-item">
-            <svg width="24" height="24" class="contact-icon"><use href="./images/icons.svg#map"></use></svg>
+            <svg width="24" height="24" class="contact-icon">
+              <use href="./images/icons.svg#map"></use>
+            </svg>
             <div class="contact-details">
               <p class="contact-label">Store</p>
-              <a href="https://www.google.com/maps/search/?api=1&query=456+Floral+Ave,+Sydney+NSW+2000+AU" target="_blank" rel="noopener noreferrer" class="contact-link">456 Floral Ave, Sydney NSW 2000 AU</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=456+Floral+Ave,+Sydney+NSW+2000+AU"
+                target="_blank" rel="noopener noreferrer" class="contact-link">456 Floral Ave, Sydney NSW 2000 AU</a>
             </div>
           </div>
         </address>
-        
-          <picture>
-            <source type="image/webp" srcset="./images/contacts@X1.webp 1x, ./images/contacts@X2.webp 2x">
-            <img loading="lazy" src="./images/contacts@X1.jpg" srcset="./images/contacts@X2.jpg 2x" alt="Florist table"
-          class="contacts-image" width="700" height="396">
-          </picture>
+
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="./images/contacts@X1.webp 1x, ./images/contacts@X2.webp 2x">
+          <source type="image/jpeg" media="(min-width: 1440px)"
+            srcset="./images/contacts@X1.jpg 1x, ./images/contacts@X2.jpg 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./images/contacts@X1.webp 1x, ./images/contacts@X2.webp 2x">
+          <source type="image/jpeg" media="(min-width: 768px)"
+            srcset="./images/contacts@X1.jpg 1x, ./images/contacts@X2.jpg 2x">
+          <source type="image/webp" srcset="./images/contacts@X1.webp 1x, ./images/contacts@X2.webp 2x">
+          <img loading="lazy" src="./images/contacts@X1.jpg" srcset="./images/contacts@X2.jpg 2x" alt="Florist table"
+            class="contacts-image" width="700" height="396">
+        </picture>
       </div>
     </section>
   </main>
@@ -324,7 +258,9 @@
   <footer class="footer-section">
     <div class="container">
       <a href="./index.html" class="footer-logo-link" aria-label="Flora Home">
-        <svg class="footer-logo" aria-label="Flora Footer Logo" viewBox="0 0 84 36"><use href="./images/icons.svg#Logo"></use></svg>
+        <svg class="footer-logo" aria-label="Flora Footer Logo" viewBox="0 0 84 36">
+          <use href="./images/icons.svg#Logo"></use>
+        </svg>
       </a>
       <ul class="footer-navigation-list">
         <li><a href="#about" class="general-link">About Us</a></li>
@@ -334,17 +270,48 @@
         <li><a href="#contacts" class="general-link">Contacts</a></li>
       </ul>
       <ul class="footer-socials">
-        <li><a href="https://facebook.com" class="general-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="social-icon"><use href="./images/icons.svg#Facebook"></use></svg></a></li>
-        <li><a href="https://instagram.com" class="general-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="social-icon"><use href="./images/icons.svg#Instagram"></use></svg></a></li>
-        <li><a href="https://twitter.com" class="general-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter(X)"><svg class="social-icon"><use href="./images/icons.svg#X"></use></svg></a></li>
+        <li><a href="https://facebook.com" class="general-link" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook"><svg class="social-icon">
+              <use href="./images/icons.svg#Facebook"></use>
+            </svg></a></li>
+        <li><a href="https://instagram.com" class="general-link" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram"><svg class="social-icon">
+              <use href="./images/icons.svg#Instagram"></use>
+            </svg></a></li>
+        <li><a href="https://twitter.com" class="general-link" target="_blank" rel="noopener noreferrer"
+            aria-label="Twitter(X)"><svg class="social-icon">
+              <use href="./images/icons.svg#X"></use>
+            </svg></a></li>
       </ul>
+      <div class="footer-subscribe">
+        <h3 class="footer-subscribe-title">Subscribe to our newsletter</h3>
+        <p class="text footer-subscribe-text">Get the latest updates on new collections and special offers.</p>
+        <form class="footer-subscribe-form" autocomplete="on">
+          <div class="subscribe-form-group">
+            <input type="email" name="email" class="subscribe-email-input" placeholder="Your Email" required
+              aria-label="Your Email">
+            <button type="submit" class="primary-button subscribe-submit-btn">Subscribe</button>
+          </div>
+          <label class="subscribe-agreement-label">
+            <input type="checkbox" name="agreement" class="subscribe-checkbox visually-hidden" required>
+            <span class="subscribe-custom-checkbox">
+              <svg class="subscribe-checkbox-icon" width="12" height="12">
+                <use href="./images/icons.svg#check"></use>
+              </svg>
+            </span>
+            <span class="subscribe-agreement-text">I agree to the Terms of Service and Privacy Policy</span>
+          </label>
+        </form>
+      </div>
       <hr class="footer-divider">
       <p class="footer-copyright">&copy; 2025 Flora. All rights reserved.</p>
     </div>
   </footer>
 
   <a href="#" class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
-    <svg width="24" height="24"><use href="./images/icons.svg#top-arrow-alt"></use></svg>
+    <svg width="24" height="24">
+      <use href="./images/icons.svg#top-arrow-alt"></use>
+    </svg>
   </a>
 
   <div class="mobile-menu" id="mobile-menu" data-menu>
@@ -359,10 +326,81 @@
       <a href="#bouquets" class="primary-button menu-action-button">Explore Bouquets</a>
     </div>
   </div>
+  <div class="modal-background" id="detail-modal">
+    <div class="modal-container detail-modal-container">
+      <button class="modal-close-btn" type="button" data-modal-close aria-label="Close modal">
+        <svg class="modal-close-btn-icon" width="24" height="24">
+          <use href="./images/icons.svg#close_x"></use>
+        </svg>
+      </button>
 
-  <script src="./js/slider.js"></script>
-  <script src="./js/mobile-menu.js"></script>
-  <script src="./js/scroll-top.js"></script>
+      <div class="modal-product-layout">
+        <div class="modal-image-wrapper">
+          <img class="modal-product-img" src="" alt="Product Image">
+        </div>
+
+        <div class="modal-info-wrapper">
+          <h2 class="modal-title">Product Title</h2>
+          <div class="modal-price-wrapper">
+            <span class="modal-price">$0.00</span>
+          </div>
+          <p class="modal-description">Product description will appear here...</p>
+          <div class="modal-buy-block">
+            <button class="modal-buy-btn primary-button" type="button">Buy now</button>
+            <input type="number" class="modal-quantity-input" value="1" min="1" aria-label="Quantity">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-background" id="order-modal">
+    <div class="modal-container order-modal-container">
+      <button class="modal-close-btn" type="button" data-modal-close aria-label="Close modal">
+        <svg class="modal-close-btn-icon" width="24" height="24">
+          <use href="./images/icons.svg#close_x"></use>
+        </svg>
+      </button>
+
+      <h2 class="modal-order-title">Order</h2>
+      <form class="order-form" autocomplete="on">
+        <label class="order-form-group">
+          <span class="order-form-label">Name*</span>
+          <input type="text" name="name" class="order-form-inputName order-form-input" placeholder="Ann" required
+            aria-label="Name">
+        </label>
+
+        <label class="order-form-group">
+          <span class="order-form-label">Phone*</span>
+          <input type="tel" name="phone" class="order-form-inputPhone order-form-input" placeholder="+1 (555) 123-4567"
+            required aria-label="Phone number">
+        </label>
+
+        <label class="order-form-group">
+          <span class="order-form-label">Adress</span>
+          <input type="text" name="address" class="order-form-inputAddress order-form-input"
+            placeholder="456 Floral Ave, Sydney NSW 2000 AU" aria-label="Address">
+        </label>
+
+        <label class="order-form-group">
+          <span class="order-form-label">Message</span>
+          <textarea name="message" class="order-form-textarea" placeholder="Type your message..."
+            aria-label="Message"></textarea>
+        </label>
+
+        <div class="order-submit-wrapper">
+          <button class="order-submit-btn primary-button" type="submit">Go to Checkout</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <script type="module" src="./js/bouquets.js"></script>
+  <script type="module" src="./js/slider.js"></script>
+  <script type="module" src="./js/mobile-menu.js"></script>
+  <script type="module" src="./js/scroll-top.js"></script>
+  <script type="module" src="./js/modal.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({ once: true });
